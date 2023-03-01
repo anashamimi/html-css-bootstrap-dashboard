@@ -31,7 +31,7 @@
 
             <div class="ah-nav-search d-flex align-items-center rounded px-2 gap-2">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" readonly class="form-control-plaintext" id="search" name="search"
+                <input type="text" class="form-control-plaintext" id="search" name="search"
                     placeholder="Prova a cercare: Lezioni di Laravel">
             </div>
 
@@ -57,8 +57,33 @@
 
     <!-- Sidebar -->
     <div class="wrapper d-flex">
-        <nav id="sidebar" class="text-white">
-            <div>
+        <nav id="sidebar" class="text-white p-4">
+            <div class="ah-height-100 d-flex flex-column">
+                <div class="d-flex flex-column gap-2">
+                    <div class=" d-flex gap-3 align-items-center">
+                        <a href="#"><i class="fa-solid fa-house"></i></a>
+                        <span>Home</span>
+                    </div>
+
+                    <div class="d-flex gap-3 align-items-center">
+                        <a href="#"><i class="fa-solid fa-chart-simple"></i></a>
+                        <span>Stats</span>
+                    </div>
+                    
+                    <div class="d-flex gap-3 align-items-center">
+                        <a href="#"><i class="fa-solid fa-signal"></i></a>
+                        <span>Signal</span>
+                    </div>
+                    
+                </div>
+
+                <div class="d-flex mt-auto">
+                    <div class="d-flex gap-3 align-items-center">
+                        <a href="#"><i class="fa-solid fa-gear"></i></a>
+                        <span>Admin</span>
+                    </div>
+                    
+                </div>
                 
             </div>
         </nav>
@@ -69,15 +94,15 @@
             <!-- asidebar -->
             <div id="aside" class="bg-primary text-white py-4">
                 <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12 col-md-4 d-flex align-items-center gap-4">
+                    <div class="row g-4">
+                        <div class="col-12 col-md-3 d-flex align-items-center gap-4 order-md-3">
                             <span>Nuovo Studente</span>
                             <div class="ah-square rounded d-flex align-items-center justify-content-center pb-1">
                                 <span>+</span>
                             </div>
                         </div>
 
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-md-6  order-md-1">
                             <div class="d-flex align-items-center gap-2">
                                 <h2>Boolean</h2>
                                 <div class="ah-breadcrumb rounded-5 px-2">
@@ -92,26 +117,26 @@
 
                                 <span>>></span>
 
-                                <div class="ah-breadcrumb rounded-5 d-lg-none px-2 pb-1">
+                                <div class="ah-breadcrumb rounded-5 d-xl-none px-2 pb-1">
                                     +
                                 </div>
 
-                                <div class="ah-breadcrumb rounded-5 d-none d-lg-block px-2">
+                                <div class="ah-breadcrumb rounded-5 d-none d-xl-block px-2">
                                     Boolean mobile app
                                 </div>
 
-                                <div class="ah-breadcrumb rounded-5 d-none d-lg-block px-2">
+                                <div class="ah-breadcrumb rounded-5 d-none d-xl-block px-2">
                                     Boolean web app
                                 </div>
 
-                                <div class="ah-breadcrumb rounded-5 d-none d-lg-block px-2">
+                                <div class="ah-breadcrumb rounded-5 d-none d-xl-block px-2">
                                     Boolean blog app
                                 </div>
 
                             </div>
                         </div>
 
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-md-3  order-md-2">
                             <span>Studenti online negli ultimi 30 minuti</span>
                             <h2>125</h2>                                
                         </div>
