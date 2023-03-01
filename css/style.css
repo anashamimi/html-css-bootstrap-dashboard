@@ -1,0 +1,57 @@
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-sidebar: #051e34;
+    --bg-search: #e5e5e5;
+}
+
+.wrapper{
+    margin-top: 70px;
+    height: calc(100vh - 70px);
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+}
+
+/* Header */
+
+header{
+    height: 70px;
+}
+
+.ah-logo-small{
+    width: 65px;
+}
+
+.ah-search{
+    background-color: var(--bg-search);
+    
+}
+
+/* Sidebar */
+
+#sidebar{
+    height: 100%;
+    width: 180px;
+    flex-shrink: 0;
+    background-color: var(--bg-sidebar);
+    background-image: url("../img/img/sidebar-bg.png");
+    
+}
+
+/* Main */
+
+main{
+    flex-grow: 1;
+    overflow-y: auto;
+    height: 100%;
+}
+
