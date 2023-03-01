@@ -20,16 +20,25 @@
 
 <body class="bg-body-tertiary">
     <header class="fixed-top d-flex align-items-center">
-        <nav class="bg-white row justify-content-between">
-            <div class="d-none d-md-block">
+        <nav class="bg-white d-flex align-items-center justify-content-between">
+            
+            <div class="d-none d-md-block px-2">
                 <img src="./img/img/logo.svg" alt="Logo">
             </div>
-            <div class="ah-logo-small d-md-none">
+            <div class="ah-logo-small d-md-none px-2">
                 <img src="./img/img/mobile-logo.png" alt="Logo">
             </div>
 
-            <div class="ah-search">
-                
+            <div class="ah-nav-search d-flex align-items-center rounded px-2 gap-2">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" readonly class="form-control-plaintext" id="search" name="search" placeholder="Prova a cercare: Lezioni di Laravel">
+            </div>
+
+            <div class="d-flex px-3 gap-4">
+                <a href="#"><i class="fa-solid fa-list-ul"></i></a>                
+                <a href="#"><i class="fa-solid fa-circle-question"></i></a>
+                <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                <a href="#"><i class="fa-solid fa-bell"></i></a>
             </div>
         </nav>
     </header>
