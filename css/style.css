@@ -99,6 +99,10 @@ header a{
 .ah-width-500{
     width: 500px;
 }
+
+.offcanvas.offcanvas-end{
+    width: 750px;
+}
 /* Main */
 
 main{
