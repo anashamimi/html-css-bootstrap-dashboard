@@ -69,21 +69,31 @@ header a{
 }
 
 #sidebar a{
-    color: white;
+    color: var(--bs-white);
 }
 
+.ah-sidebar-button {
+    cursor: pointer;
+    width: fit-content;
+    transition: background-color .5s; 
+}
+
+.ah-sidebar-button:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
 /* Asidebar */
 .ah-square{
     height: 40px;
     width: 40px;
-    border: 1px solid white;
+    border: 1px solid var(--bs-white);
     font-size: 2rem;
     cursor: pointer;
-    transition: background-color 0.5s;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .ah-square:hover{
-    background-color: var(--bs-primary-text);
+    background-color: var(--bs-white);
+    color: var(--bs-black);
 }
 
 .ah-breadcrumb{
@@ -93,7 +103,7 @@ header a{
 }
 
 .ah-breadcrumb:hover{
-    background-color: rgba(0, 0, 0, 1);
+    background-color: var(--bs-black);
 }
 
 .ah-width-500{
@@ -111,8 +121,6 @@ main{
     height: 100%;
 }
 
-/* Table */
-
 table img{
     width: 30px;
 }
@@ -126,7 +134,16 @@ table img{
     cursor: pointer;
 }
 
+table.table tbody tr:hover, .accordion-button:hover{
+    background-color: var(--bg-search);
+}
 
+.form-check-input{
+    cursor: pointer;
+}
+
+
+/* Media query */
 @media screen and (min-width: 992px) {
     #sidebar{
         width: 150px;
